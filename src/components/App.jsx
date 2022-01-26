@@ -5,14 +5,11 @@ import Statistics from './Statistics/Statistics';
 import Notification from './Notification/Notification';
 
 export default class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      good: 0,
-      neutral: 0,
-      bad: 0,
-    };
-  }
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
 
   onLeaveFeedback = name => {
     this.setState(prevState => ({
